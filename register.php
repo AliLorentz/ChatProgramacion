@@ -17,11 +17,7 @@
 </br>
 </br>
 <div class="formulario row container col-12">
-		<div class="registrar col-4">
-			<h1 >Bienvenido</h1>
-			<p class="text-center ">Ingresa a la mejor red social de la universidad experimental del tachira registrate si aun no tienes cuenta</p>
-			<a href="/" class="boton-registro">Registrarse</a>
-		</div>
+
 		<form class=" col-5">
 		<div class="form-group">
 			<h1 class="titulo text-center">Registro</h1>
@@ -34,7 +30,12 @@
 			<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
 		</div>
 		<button type="submit" class="btn btn-success col-12">Login</button>
-		</form>	
+        </form>	
+        <div class="registrar col-4">
+			<h1 >Bienvenido</h1>
+			<p class="text-center ">Registrate y accede a la mejor forma de comunicarte con tus compañeros de clases ¿Ya tienes cuenta?</p>
+			<a href="index.php" class="boton-registro">Iniciar Cuenta</a>
+		</div>
 	</div>
     
 </body>
