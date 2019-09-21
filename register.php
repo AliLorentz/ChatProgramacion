@@ -23,10 +23,18 @@
 			<h1 class="titulo text-center">Registro</h1>
 			<label for="exampleInputEmail1">User</label>
 			<input type="text" class="form-control" id="userInput" placeholder="Enter user">
-		<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+		</div>
+		</br>
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+			<label class="form-check-label" for="inlineRadio1">Masculino</label>
+		</div>
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+			<label class="form-check-label" for="inlineRadio2">Femenino</label>
 		</div>
 		<div class="form-group">
-			<label for="exampleInputPassword1">Password</label>
+			<label for="exampleInputPassword1"></br>Password</label>
 			<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
 		</div>
 		<button type="submit" class="btn btn-success col-12">Login</button>
