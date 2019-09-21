@@ -48,7 +48,8 @@
         </form>	
         <div class="registrar col-4">
 			<h1 >Bienvenido</h1>
-			<p class="text-center ">Registrate y accede a la mejor forma de comunicarte con tus compañeros de clases ¿Ya tienes cuenta?</p>
+			<p class="text-center ">Registrate y accede a la mejor forma de comunicarte con tus compañeros de clases</p>
+			<p class="text-center "> <b>¿Ya tienes cuenta?</b></p>
 			<a href="index.php" class="boton-registro">Iniciar Cuenta</a>
 		</div>
 	</div>
