@@ -1,3 +1,24 @@
+<?php
+    session_start();
+    require 'database.php';
+    //Si no esta vacio manejar sus datos de el method POST
+    if(!empty($_POST['email'])&& !empty($_POST['password'])){
+        //Consulta
+        $records = $conn->prepare('SELECT id, email, password FROM users WHERE email = :email');
+        $records->bindParam(':email', $_POST['email']);
+        $records->execute();
+        $results = $records->fetch(PDO::FETCH_ASSOC);
+        $message='';
+        //Obtiene el id      y Compara la contraseña que esta colocando el usuario a la de la base de datos
+        if(count($results) > 0 && password_verify($_POST['password'], $results['password'])){
+            $_SESSION['users_id']=$results['id'];
+            header("Location: /php-login");
+        }else{
+            $message = 'Credenciales no existentes';
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
