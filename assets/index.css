@@ -1,15 +1,41 @@
 body{
-background-image: linear-gradient(120deg,#3498db,#8e44ad);
+background:#d4e4f6f1;
 min-height: 100vh;
 width: 98vw;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
 }
 
 form{
     padding: 50px;
     background: white;
-    border-radius: 5px;
+
 }
 
 form .btn{
     text-align: center;
+}
+
+form .titulo{
+color: rgb(3, 138, 79);
+}
+
+.registrar{
+    background: #06AD65;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #f1f1f1;
+}
+
+
+.boton-registro {
+   color: white;
+   padding: 8px 15px;
+   border-radius: 20px;
+   border: 2px solid white;
 }
