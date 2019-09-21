@@ -22,7 +22,7 @@
 			<h1 >Bienvenido</h1>
 			<p class="text-center ">Ingresa a la Mejor Red Social de la Universidad Experimental Nacional del Tachira</p>
 			<p class="text-center ">Registrate si aun no tienes cuenta</p>
-			<a href="/" class="boton-registro">Registrarse</a>
+			<a href="register.php" class="boton-registro">Registrarse</a>
 		</div>
 		<form class=" col-5">
 		<div class="form-group">
