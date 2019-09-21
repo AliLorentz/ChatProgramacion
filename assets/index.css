@@ -7,12 +7,16 @@ width: 98vw;
 .formulario{
     display: flex;
     justify-content: center;
+    
 }
 
 form{
     padding: 50px;
     background: white;
-
+    border-radius: 0px 15px 15px 0px;
+    -webkit-box-shadow: 10px 10px 96px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 96px 3px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 96px 3px rgba(0,0,0,0.75);
 }
 
 form .btn{
@@ -30,12 +34,22 @@ color: rgb(3, 138, 79);
     align-items: center;
     justify-content: center;
     color: #f1f1f1;
+    border-radius: 15px 0 0px 15px;
+    -webkit-box-shadow: 10px 10px 96px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 96px 3px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 96px 3px rgba(0,0,0,0.75);
 }
 
 
-.boton-registro {
+.boton-registro {  
    color: white;
    padding: 8px 15px;
    border-radius: 20px;
    border: 2px solid white;
+}
+
+.boton-registro:hover{
+    text-decoration: none;
+    background: white;
+    color: #06AD65;
 }
