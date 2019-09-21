@@ -26,15 +26,22 @@
 		</div>
 		</br>
 		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+			<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
 			<label class="form-check-label" for="inlineRadio1">Masculino</label>
 		</div>
 		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+			<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" >
 			<label class="form-check-label" for="inlineRadio2">Femenino</label>
 		</div>
+	
 		<div class="form-group">
-			<label for="exampleInputPassword1"></br>Password</label>
+		<label for="start">	</br>Nacimiento</label>
+
+		<input type="date" id="start" name="trip-start"
+			min="1970-01-01" max="2015-12-31">
+		</div>
+		<div class="form-group">
+			<label for="exampleInputPassword1">Password</label>
 			<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
 		</div>
 		<button type="submit" class="btn btn-success col-12">Login</button>
