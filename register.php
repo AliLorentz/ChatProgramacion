@@ -23,7 +23,22 @@
 			<h1 class="titulo text-center">Registro</h1>
 			<label for="exampleInputEmail1">User</label>
 			<input type="text" class="form-control" id="userInput" placeholder="Enter user">
-		<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+		</div>
+		</br>
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+			<label class="form-check-label" for="inlineRadio1">Masculino</label>
+		</div>
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" >
+			<label class="form-check-label" for="inlineRadio2">Femenino</label>
+		</div>
+	
+		<div class="form-group">
+		<label for="start">	</br>Nacimiento</label>
+
+		<input type="date" id="start" name="trip-start"
+			min="1970-01-01" max="2015-12-31">
 		</div>
 		<div class="form-group">
 			<label for="exampleInputPassword1">Password</label>
