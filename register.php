@@ -56,7 +56,7 @@
         <div class="registrar col-4">
 			<h1 >Bienvenido</h1>
 			<p class="text-center ">Registrate y accede a la mejor forma de comunicarte con tus compañeros de clases ¿Ya tienes cuenta?</p>
-			<a href="index.php" class="boton-registro">Registrarese<a>
+			<a href="index.php" class="boton-registro">Ingresar<a>
 		</div>
 	</div>
     
