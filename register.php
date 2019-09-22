@@ -60,11 +60,6 @@ $message = '';
 		<input type="date" id="start" name="trip-start"
 			min="1970-01-01" max="2015-12-31">
 		</div>
-
-		<div class="form-group">
-			<label for="exampleInputEmail1">User</label>
-			<input type="text" class="form-control" id="userInput" placeholder="Enter user">
-		</div>
 		
 		<div class="form-group">
 			<label for="exampleInputPassword1">Password</label>
