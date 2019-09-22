@@ -40,9 +40,10 @@ $message = '';
 		<form action="register.php" method="POST" class=" col-5">
 		<div class="form-group">
 			<h1 class="titulo text-center">Registro</h1>
-			<label for="exampleInputEmail1">User</label>
-			<input type="text" class="form-control" name="name" id="userInput" placeholder="Enter user">
+			<label for="exampleInputName">Nombre</label>
+			<input type="text" class="form-control" name="name" id="name" placeholder="Nombre">
 		</div>
+		
 		</br>
 		<div class="form-check form-check-inline">
 			<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
@@ -59,6 +60,12 @@ $message = '';
 		<input type="date" id="start" name="trip-start"
 			min="1970-01-01" max="2015-12-31">
 		</div>
+
+		<div class="form-group">
+			<label for="exampleInputEmail1">User</label>
+			<input type="text" class="form-control" id="userInput" placeholder="Enter user">
+		</div>
+		
 		<div class="form-group">
 			<label for="exampleInputPassword1">Password</label>
 			<input type="password" name="password" class="form-control" id="password" placeholder="Password">
