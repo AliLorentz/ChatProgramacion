@@ -21,9 +21,10 @@
 		<form class=" col-5">
 		<div class="form-group">
 			<h1 class="titulo text-center">Registro</h1>
-			<label for="exampleInputEmail1">User</label>
-			<input type="text" class="form-control" id="userInput" placeholder="Enter user">
+			<label for="exampleInputName">Nombre</label>
+			<input type="text" class="form-control" id="name" placeholder="Nombre">
 		</div>
+		
 		</br>
 		<div class="form-check form-check-inline">
 			<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
@@ -40,6 +41,12 @@
 		<input type="date" id="start" name="trip-start"
 			min="1970-01-01" max="2015-12-31">
 		</div>
+
+		<div class="form-group">
+			<label for="exampleInputEmail1">User</label>
+			<input type="text" class="form-control" id="userInput" placeholder="Enter user">
+		</div>
+		
 		<div class="form-group">
 			<label for="exampleInputPassword1">Password</label>
 			<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
@@ -49,7 +56,7 @@
         <div class="registrar col-4">
 			<h1 >Bienvenido</h1>
 			<p class="text-center ">Registrate y accede a la mejor forma de comunicarte con tus compañeros de clases ¿Ya tienes cuenta?</p>
-			<a href="index.php" class="boton-registro">Iniciar Cuenta</a>
+			<a href="index.php" class="boton-registro">Registrarese<a>
 		</div>
 	</div>
     
