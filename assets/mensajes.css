@@ -1,0 +1,41 @@
+.mensajes{
+    background:rgba(223, 238, 245, 0.637);
+    height: 94vh;
+
+}
+.conversacion{
+    margin: 20px 0px;
+}
+
+.agregar{
+    background:green;
+    padding: 10px 15px;
+    border-radius: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.agregar:hover{
+    text-decoration: none;
+    color:white;
+}
+
+.persona{
+    max-height: 100vh;
+}
+.persona .imagen{
+    width: 40px;
+}
+
+.amigos{
+    padding:10px;
+}
+
+.usuarios{
+    padding: 10px;
+}
+
+.usuarios:hover{
+    background: #c3f5c1;
+    cursor: pointer;
+}
