@@ -1,6 +1,8 @@
 <?php
     session_start();
     require 'database.php';
+    include "database.php";
+
 ?>
 
 <!DOCTYPE html>
@@ -41,6 +43,11 @@
             <th>Apellido</th>
             <th>Acciones</th>
         </tr>
+
+        <?php
+            
+        ?>
+
         <tr>
             <td>1</td>
             <td>Tiziana</td>
