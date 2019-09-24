@@ -48,14 +48,14 @@
 
          $sql="select * from users order by name";
          $resultado=$conec->getCon()->query($sql);
-         while ($persona=$resultado->fetch_assoc()) {
+         /*while ($persona=$resultado->fetch_assoc()) {
           echo "<div class='usuarios'>".        
           "<img class='imagen' src='assets/usuario.png'/>".
           "<span class='amigos'>",$persona['name'],"</span>".
           "</br>".
           "</div>";
          }
-                                                 
+          */                                       
               ?>
            
        </div>
