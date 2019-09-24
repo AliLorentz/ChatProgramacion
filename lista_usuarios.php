@@ -38,16 +38,41 @@
         <tr>
             <th>ID</th>
             <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Acciones</th>
         </tr>
         <tr>
             <td>1</td>
-            <td>Tiziana Amicarella</td>
-            
+            <td>Tiziana</td>
+            <td>Amicarella</td>
+            <td>
+                <a class="link_agg" href="#">Agregar</a>
+                |
+                <a class="link_delete" href="#">Eliminar</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Tiziana</td>
+            <td>Amicarella</td>
             <td>
                 <a class="link_agg" href="#">Agregar</a>
                 <a class="link_delete" href="#">Eliminar</a>
             </td>
         </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Tiziana</td>
+            <td>Amicarella</td>
+            <td>
+                <a class="link_agg" href="#">Agregar</a>
+                <a class="link_delete" href="#">Eliminar</a>
+            </td>
+        </tr>
+
+
     </table>
 
 </body>
