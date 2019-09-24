@@ -39,3 +39,27 @@
     background: #c3f5c1;
     cursor: pointer;
 }
+
+/******** LISTA USUARIOS *****/
+
+.btn_new{
+    display: inline-block;
+    background:#06AD65;
+    color:#FFF;
+    padding: 5px 25px;
+    border-radius: 4px;
+    margin: 20px;
+}
+
+table{
+    border-collapse: collapse;
+    font-size: 12px;
+    width: 100%;
+}
+
+table th{
+    text-align: left;
+    padding: 10px;
+    background: #06AD65;
+    color: #FFF;
+}
