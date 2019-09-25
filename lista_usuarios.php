@@ -1,7 +1,7 @@
 <?php
     session_start();
     require 'database.php';
-    include "database.php";
+    //include "database.php";
 
 ?>
 
@@ -40,47 +40,17 @@
         <tr>
             <th>ID</th>
             <th>Nombre</th>
-            <th>Apellido</th>
             <th>Acciones</th>
         </tr>
-
-        <?php
-            
-        ?>
-
         <tr>
-            <td>1</td>
-            <td>Tiziana</td>
-            <td>Amicarella</td>
-            <td>
-                <a class="link_agg" href="#">Agregar</a>
+          <td>1</td>
+          <td>Tiziana</td>
+          <td>
+              <a class="link_agg" href="#">Agregar</a>
                 |
                 <a class="link_delete" href="#">Eliminar</a>
-            </td>
+          </td>
         </tr>
-
-        <tr>
-            <td>1</td>
-            <td>Tiziana</td>
-            <td>Amicarella</td>
-            <td>
-                <a class="link_agg" href="#">Agregar</a>
-                <a class="link_delete" href="#">Eliminar</a>
-            </td>
-        </tr>
-
-        <tr>
-            <td>1</td>
-            <td>Tiziana</td>
-            <td>Amicarella</td>
-            <td>
-                <a class="link_agg" href="#">Agregar</a>
-                <a class="link_delete" href="#">Eliminar</a>
-            </td>
-        </tr>
-
-
     </table>
-
 </body>
 </html>
