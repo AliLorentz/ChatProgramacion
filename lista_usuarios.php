@@ -42,15 +42,33 @@
             <th>Nombre</th>
             <th>Acciones</th>
         </tr>
-        <tr>
-          <td>1</td>
-          <td>Tiziana</td>
-          <td>
-              <a class="link_agg" href="#">Agregar</a>
-                |
-                <a class="link_delete" href="#">Eliminar</a>
-          </td>
-        </tr>
+        <?php
+          include("Conexion.php");
+          $conec=new Conectar();
+          $conec->ConectarBD();
+
+          $sql="select * from users order by name";
+          $resultado=$conec->getCon()->query($sql);
+
+          if($resultado > 0){
+            while ($data= $resultado->fetch_assoc()) {
+            ?> 
+              <tr>
+                <td><?php echo $data["id"];?></td> 
+                <td><?php echo $data["name"];?></td>
+                <td>
+                  <a class="link_agg" href="#">Agregar</a>
+                  |
+                  <a class="link_delete" href="#">Eliminar</a>
+                </td>
+              </tr>
+            <?php
+            }
+          }else{
+            echo "Esta vacio";
+          }
+        ?>
+        
     </table>
 </body>
 </html>
