@@ -50,7 +50,7 @@
           $sql="select * from users order by name";
           $resultado=$conec->getCon()->query($sql);
 
-          if($resultado > 0){
+          if($resultado != NULL){
             while ($data= $resultado->fetch_assoc()) {
             ?> 
               <tr>
