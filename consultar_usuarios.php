@@ -42,16 +42,16 @@
   </div>
 </nav>
 
-<h1 class="titulo">Consulta de Usuario</h1>
+<h1 class="titulo">Agregar Usuario</h1>
 <form action="" method="POST">
   <div class="container form-group">
-    <label for="nombre">Nombre de Usuario </label>
+    <label for="nombre">Nombre de Usuario</label>
     <input type="text" name="nombre" class="form-control" id="nombre">
     <br>
     <input type="submit" value="Buscar" class="btn btn-info" name="boton">
   </div>
 </form>
-
+<table>
 <?php
 
   if(isset($_POST['boton'])){
@@ -64,14 +64,21 @@
     $resultado=$conec->getCon()->query($sql);
     
     while ($data = $resultado->fetch_assoc()){
-      echo $data['name'];
+      echo 
+      "
+      <table width =\"100%\">
+        <tr>
+          <td><b><center>Busqueda</center></b></td>
+        </tr>
+        <tr>
+          <td>".$data['name']."</td>
+        </tr>
+      </table>
+      ";
     }
-   
   }
 ?>
-
-<table>
-
 </table>
+
 </body>
 </html>
