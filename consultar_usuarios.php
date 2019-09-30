@@ -69,9 +69,13 @@
       <table width =\"100%\">
         <tr>
           <td><b><center>Busqueda</center></b></td>
+          <td><b><center>Acciones</center></b></td>
         </tr>
         <tr>
-          <td>".$data['name']."</td>
+          <td><center>".$data['name']."</center></td>
+          <td><center>
+            <a class=\"link_agg\" href=\"#\">Agregar</a>
+          </center></td>
         </tr>
       </table>
       ";
