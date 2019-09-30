@@ -41,9 +41,13 @@ $message = '';
 		<div class="form-group">
 			<h1 class="titulo text-center">Registro</h1>
 			<label for="exampleInputName">Nombre</label>
-			<input type="text" class="form-control" name="name" id="name" placeholder="Nombre">
+			<input type="text" class="form-control" name="name" id="name" placeholder="Name">
 		</div>
-		
+		<!-- Creo que deberia haber Apellido en el registro, Sr Ali -->
+		<div class="form-group">
+			<label for="exampleInputLastName">Apellido</label>
+			<input type="text" class="form-control" name="lastname" id="name" placeholder="Last Name">
+		</div>
 		</br>
 		<div class="form-check form-check-inline">
 			<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
@@ -60,9 +64,13 @@ $message = '';
 		<input type="date" id="start" name="trip-start"
 			min="1970-01-01" max="2015-12-31">
 		</div>
-		
+		<!-- Y tambien Nombre de Usuario para identificar -->
 		<div class="form-group">
-			<label for="exampleInputPassword1">Password</label>
+			<label for="exampleInputUserName">Nombre de Usuario</label>
+			<input type="text" class="form-control" name="username" id="name" placeholder="Username">
+		</div>
+		<div class="form-group">
+			<label for="exampleInputPassword1">Contraseña</label>
 			<input type="password" name="password" class="form-control" id="password" placeholder="Password">
 		</div>
 		<button type="submit" class="btn btn-success col-12">Registrarse</button>

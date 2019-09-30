@@ -1,6 +1,7 @@
 <?php
     session_start();
     require 'database.php';
+    //include "database.php";
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/mensajes.css">
-    <title>Social</title>
+    <title>Lista de Usuarios</title>
 </head>
 <body>
 
@@ -27,38 +28,48 @@
         <a class="nav-link" href="#">Chat <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="consultar_usuarios.php">Agregar</a>
+        <a class="nav-link" href="#">Agregar</a>
       </li>
     </ul>
   </div>
 </nav>
 
-<div class="row container-fluid">
-    <div class="col-4">
-      <div class="conversacion col-12">
-          <a href="/" class="agregar">+</a>
-          <span>Agregar un amigo</span>
-      </div>
-       <div class="persona overflow-auto">
-        <?php                     
- 				include("Conexion.php");
-        $conec=new Conectar();
-        $conec->ConectarBD();
-        
-        $sql="select * from users order by name";
-        $resultado=$conec->getCon()->query($sql);
-        while ($persona=$resultado->fetch_assoc()) {
-          echo "<div class='usuarios'>". 
-          "<img class='imagen' src='assets/usuario.png'/>".
-          "<span class='amigos'>",$persona['name'],"</span>".
-          "</br>".
-          "</div>";
-        }                                 
+    <h1 class="titulo">Lista de Usuario</h1> 
+    <br>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Acciones</th>
+        </tr>
+        <?php
+          include("Conexion.php");
+          $conec=new Conectar();
+          $conec->ConectarBD();
+
+          $sql="select * from users order by name";
+          $resultado=$conec->getCon()->query($sql);
+
+          if($resultado != NULL){
+            while ($data= $resultado->fetch_assoc()) {
+            ?> 
+              <tr>
+                <td><?php echo $data["id"];?></td> 
+                <td><?php echo $data["name"];?></td>
+                <td>
+                  <a class="link_agg" href="#">Agregar</a>
+                  |
+                  <a class="link_delete" href="#">Eliminar</a>
+                </td>
+              </tr>
+            <?php
+            }
+          }else{
+            echo "Esta vacio";
+          }
         ?>
-       </div>
-    </div>
-    <div class="mensajes col-8">        
-    </div>
-</div>
+    </table>
+    
+
 </body>
 </html>

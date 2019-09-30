@@ -39,3 +39,46 @@
     background: #c3f5c1;
     cursor: pointer;
 }
+
+/******** LISTA USUARIOS *****/
+.titulo{
+    font-size: 25px;
+    text-align: center;
+}
+.btn_new{
+    display: inline-block;
+    background:#06AD65;
+    color:#FFF;
+    padding: 5px 25px;
+    border-radius: 4px;
+    margin: 20px;
+}
+
+table{
+    border-collapse: collapse;
+    font-size: 12pt;
+    width: 100%;
+}
+
+table th{
+    text-align: left;
+    padding: 10px;
+    background: #06AD65;
+    color: #FFF;
+}
+
+table tr:nth-child(odd){
+    background: #e4f2f0;
+}
+
+table td{
+    padding: 10px; 
+}
+
+.link_agg{
+    color: #0ca4ce;
+}
+
+.link_delete{
+    color: #f26b6b;
+}
