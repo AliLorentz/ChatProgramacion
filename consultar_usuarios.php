@@ -2,6 +2,14 @@
     session_start();
     require 'database.php';
     //include "database.php";
+   /* if(empty($_GET['id'])){
+      header("location: lista_usuarios.php");
+    }else{
+      include("Conexion.php");
+      $conec=new Conectar();
+      $conec->ConectarBD();
+      $idusuario=  $_GET['id'];
+    }*/
 ?>
 
 <!DOCTYPE html>
@@ -34,42 +42,36 @@
   </div>
 </nav>
 
-    <h1 class="titulo">Lista de Usuario</h1> 
+<h1 class="titulo">Consulta de Usuario</h1>
+<form action="" method="POST">
+  <div class="container form-group">
+    <label for="nombre">Nombre de Usuario </label>
+    <input type="text" name="nombre" class="form-control" id="nombre">
     <br>
-    <table>
-        <tr>
-            <th>ID</th>
-            <th>Nombre</th>
-            <th>Acciones</th>
-        </tr>
-        <?php
-          include("Conexion.php");
-          $conec=new Conectar();
-          $conec->ConectarBD();
+    <input type="submit" value="Buscar" class="btn btn-info" name="boton">
+  </div>
+</form>
 
-          $sql="select * from users order by name";
-          $resultado=$conec->getCon()->query($sql);
+<?php
 
-          if($resultado != NULL){
-            while ($data= $resultado->fetch_assoc()) {
-            ?> 
-              <tr>
-                <td><?php echo $data["id"];?></td> 
-                <td><?php echo $data["name"];?></td>
-                <td>
-                  <a class="link_agg" href="#">Agregar</a>
-                  |
-                  <a class="link_delete" href="#">Eliminar</a>
-                </td>
-              </tr>
-            <?php
-            }
-          }else{
-            echo "Esta vacio";
-          }
-        ?>
-    </table>
+  if(isset($_POST['boton'])){
+    include("Conexion.php");
+    $conec=new Conectar();
+    $conec->ConectarBD();
+
+    $nombre = $_POST['nombre']; 
+    $sql="select name from users where name = '$nombre' ";
+    $resultado=$conec->getCon()->query($sql);
     
+    while ($data = $resultado->fetch_assoc()){
+      echo $data['name'];
+    }
+   
+  }
+?>
 
+<table>
+
+</table>
 </body>
 </html>

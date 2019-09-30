@@ -41,9 +41,9 @@
 }
 
 /******** LISTA USUARIOS *****/
-.h1{
-    font-size: 35px;
-    display: inline-block;
+.titulo{
+    font-size: 25px;
+    text-align: center;
 }
 .btn_new{
     display: inline-block;

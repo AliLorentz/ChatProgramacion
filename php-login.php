@@ -16,7 +16,7 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">SuperChat</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -27,7 +27,7 @@
         <a class="nav-link" href="#">Chat <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="lista_usuarios.php">Agregar</a>
+        <a class="nav-link" href="consultar_usuarios.php">Agregar</a>
       </li>
     </ul>
   </div>
@@ -42,28 +42,23 @@
        <div class="persona overflow-auto">
         <?php                     
  				include("Conexion.php");
-         $conec=new Conectar();
-         $conec->ConectarBD();
-         
-
-         $sql="select * from users order by name";
-         $resultado=$conec->getCon()->query($sql);
-         while ($persona=$resultado->fetch_assoc()) {
-          echo "<div class='usuarios'>".        
+        $conec=new Conectar();
+        $conec->ConectarBD();
+        
+        $sql="select * from users order by name";
+        $resultado=$conec->getCon()->query($sql);
+        while ($persona=$resultado->fetch_assoc()) {
+          echo "<div class='usuarios'>". 
           "<img class='imagen' src='assets/usuario.png'/>".
           "<span class='amigos'>",$persona['name'],"</span>".
           "</br>".
           "</div>";
-         }
-                                               
+        }                                 
         ?>
-           
        </div>
     </div>
-
     <div class="mensajes col-8">        
     </div>
 </div>
-
 </body>
 </html>
